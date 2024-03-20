@@ -1,6 +1,6 @@
 {
   "name": "@grafana/eslint-config-dbfe",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Database Frontend centralized eSLint config",
   "license": "Apache-2.0",
   "author": "Grafana Labs",
@@ -11,33 +11,41 @@
   "files": [
     "index.js"
   ],
-  "dependencies": {
-    "@grafana/eslint-config": "7.0.0",
-    "@tanstack/eslint-plugin-query": "5.27.7",
-    "@typescript-eslint/eslint-plugin": "5.62.0",
-    "@typescript-eslint/parser": "5.62.0",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-deprecation": "2.0.0",
-    "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-jest": "27.9.0",
-    "eslint-plugin-jsdoc": "48.2.1",
-    "eslint-plugin-jsx-a11y": "6.8.0",
-    "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-react": "7.34.1",
-    "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-plugin-sort": "2.11.0",
-    "typescript": "5.4.2"
+  "devDependencies": {
+    "@grafana/eslint-config": "^7.0.0",
+    "@tanstack/eslint-plugin-query": "^5.27.7",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-deprecation": "^2.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^27.9.0",
+    "eslint-plugin-jsdoc": "^48.2.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sort": "^2.11.0",
+    "typescript": "^5.4.2"
   },
   "peerDependencies": {
-    "eslint": ">=8"
+    "@grafana/eslint-config": "^7.0.0",
+    "@tanstack/eslint-plugin-query": "^5.27.7",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-deprecation": "^2.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^27.9.0",
+    "eslint-plugin-jsdoc": "^48.2.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sort": "^2.11.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.2"
   },
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "grafana",
-    "jsdoc",
-    "jsx",
-    "react",
-    "typescript"
-  ]
+  "packageManager": "yarn@4.1.1"
 }
