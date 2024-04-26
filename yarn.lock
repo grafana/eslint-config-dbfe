@@ -102,7 +102,7 @@ __metadata:
     eslint-plugin-prettier: "npm:^5.1.3"
     eslint-plugin-react: "npm:^7.34.1"
     eslint-plugin-react-hooks: "npm:^4.6.0"
-    eslint-plugin-sort: "npm:^2.11.0"
+    eslint-plugin-sort: "npm:^2.12.0"
     typescript: "npm:^5.4.2"
   peerDependencies:
     "@grafana/eslint-config": ^7.0.0
@@ -119,7 +119,7 @@ __metadata:
     eslint-plugin-prettier: ^5.1.3
     eslint-plugin-react: ^7.34.1
     eslint-plugin-react-hooks: ^4.6.0
-    eslint-plugin-sort: ^2.11.0
+    eslint-plugin-sort: ^2.12.0
     prettier: ^3.2.5
     typescript: ^5.4.2
   languageName: unknown
@@ -1802,16 +1802,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-sort@npm:^2.11.0":
-  version: 2.11.0
-  resolution: "eslint-plugin-sort@npm:2.11.0"
+"eslint-plugin-sort@npm:^2.12.0":
+  version: 2.12.0
+  resolution: "eslint-plugin-sort@npm:2.12.0"
   dependencies:
     "@typescript-eslint/experimental-utils": "npm:^5.54.1"
     isomorphic-resolve: "npm:^1.0.0"
     natural-compare: "npm:^1.4.0"
   peerDependencies:
     eslint: ">=6"
-  checksum: 10c0/bef1a29a24e9576a16f3a51ffeece09e8a6bf88e2ff7f5a9e8fd9c35b85285cdb62f6751fb365eb84b87e0942688157f5f3df8a1f73673b7a3b061e26bed4c25
+  checksum: 10c0/a31041600909e173900c9cf62234e5945c8bc398fa899569c3316e59b6e7db0d4a99aec77e59f6f7fe8c847d8ccefa31458c750cb87d3d7e71c64e1f75b21850
   languageName: node
   linkType: hard
 
