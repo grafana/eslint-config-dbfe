@@ -90,7 +90,7 @@ __metadata:
   resolution: "@grafana/eslint-config-dbfe@workspace:."
   dependencies:
     "@grafana/eslint-config": "npm:^7.0.0"
-    "@tanstack/eslint-plugin-query": "npm:^5.27.7"
+    "@tanstack/eslint-plugin-query": "npm:^5.32.1"
     "@typescript-eslint/eslint-plugin": "npm:^6.21.0"
     "@typescript-eslint/parser": "npm:^6.21.0"
     eslint-config-prettier: "npm:^9.1.0"
@@ -106,7 +106,7 @@ __metadata:
     typescript: "npm:^5.4.2"
   peerDependencies:
     "@grafana/eslint-config": ^7.0.0
-    "@tanstack/eslint-plugin-query": ^5.27.7
+    "@tanstack/eslint-plugin-query": ^5.32.1
     "@typescript-eslint/eslint-plugin": ^6.21.0
     "@typescript-eslint/parser": ^6.21.0
     eslint: ^8.0.0
@@ -227,14 +227,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/eslint-plugin-query@npm:^5.27.7":
-  version: 5.27.7
-  resolution: "@tanstack/eslint-plugin-query@npm:5.27.7"
+"@tanstack/eslint-plugin-query@npm:^5.32.1":
+  version: 5.32.1
+  resolution: "@tanstack/eslint-plugin-query@npm:5.32.1"
   dependencies:
     "@typescript-eslint/utils": "npm:^6.20.0"
   peerDependencies:
     eslint: ^8.0.0
-  checksum: 10c0/e38117a59517a9050e87101109859aa2b03b38750ca44bbf94227ef2d54123f75cb3f6de1bcaa98f51adc15aacad09f466fbdadaf45ed022b2b9ea959fd3e9aa
+  checksum: 10c0/9be7a43f44be6d4ee7595e9239fc2a8072c20cf0039644431ea9f1023cf0d3a1afebfb4fc33151cf1618e213c5b3bc240d4f69fcc07471c3f49f2c3121ed99f6
   languageName: node
   linkType: hard
 
