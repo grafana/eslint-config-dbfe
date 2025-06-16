@@ -12,7 +12,7 @@
     "index.js"
   ],
   "devDependencies": {
-    "@grafana/eslint-config": "^8.0.0",
+    "@grafana/eslint-config": "^8.1.0",
     "@tanstack/eslint-plugin-query": "^5.78.0",
     "@typescript-eslint/eslint-plugin": "^8.33.1",
     "@typescript-eslint/parser": "^8.34.0",
@@ -29,7 +29,7 @@
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
-    "@grafana/eslint-config": "^8.0.0",
+    "@grafana/eslint-config": "^8.1.0",
     "@tanstack/eslint-plugin-query": "^5.78.0",
     "@typescript-eslint/eslint-plugin": "^8.33.1",
     "@typescript-eslint/parser": "^8.34.0",
