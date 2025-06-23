@@ -13,7 +13,7 @@
   ],
   "devDependencies": {
     "@grafana/eslint-config": "^8.1.0",
-    "@tanstack/eslint-plugin-query": "^5.78.0",
+    "@tanstack/eslint-plugin-query": "^5.81.2",
     "@typescript-eslint/eslint-plugin": "^8.33.1",
     "@typescript-eslint/parser": "^8.34.0",
     "eslint-config-prettier": "^10.1.5",
@@ -30,7 +30,7 @@
   },
   "peerDependencies": {
     "@grafana/eslint-config": "^8.1.0",
-    "@tanstack/eslint-plugin-query": "^5.78.0",
+    "@tanstack/eslint-plugin-query": "^5.81.2",
     "@typescript-eslint/eslint-plugin": "^8.33.1",
     "@typescript-eslint/parser": "^8.34.0",
     "eslint": "^9.19.0",
