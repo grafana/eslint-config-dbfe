@@ -40,12 +40,12 @@ export default [
         "error",
         {
           groups: [
-            { type: "side-effect", order: 20 },
-            { regex: "^@grafana", order: 30 },
             { regex: "^react$", order: 10 },
             { type: "dependency", order: 15 },
-            { regex: "^.+\\.s?css$", order: 50 },
+            { type: "side-effect", order: 20 },
+            { regex: "^@grafana", order: 30 },
             { type: "other", order: 40 },
+            { regex: "^.+\\.s?css$", order: 50 },
           ],
           separator: "\n",
         },
