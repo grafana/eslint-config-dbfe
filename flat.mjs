@@ -1,10 +1,10 @@
-import grafanaConfig from '@grafana/eslint-config/flat.js';
-import importPlugin from 'eslint-plugin-import';
-import jsxA11y from 'eslint-plugin-jsx-a11y';
-import sortPlugin from 'eslint-plugin-sort';
-import jestPlugin from 'eslint-plugin-jest';
-import tanstackQueryPlugin from '@tanstack/eslint-plugin-query';
-import deprecationPlugin from 'eslint-plugin-deprecation';
+import grafanaConfig from "@grafana/eslint-config/flat.js";
+import importPlugin from "eslint-plugin-import";
+import jsxA11y from "eslint-plugin-jsx-a11y";
+import sortPlugin from "eslint-plugin-sort";
+import jestPlugin from "eslint-plugin-jest";
+import tanstackQueryPlugin from "@tanstack/eslint-plugin-query";
+import deprecationPlugin from "eslint-plugin-deprecation";
 
 export default [
   // Spread Grafana's base config
@@ -19,7 +19,7 @@ export default [
   jsxA11y.flatConfigs.strict,
 
   // TanStack Query recommended config
-  ...tanstackQueryPlugin.configs['flat/recommended'],
+  ...tanstackQueryPlugin.configs["flat/recommended"],
 
   // Main DBFE config with custom rules
   {
@@ -31,53 +31,36 @@ export default [
       // Sort plugin recommended rules
       ...sortPlugin.configs.recommended.rules,
       // Custom rules
-      'react/prop-types': 'off',
-      'jsx-a11y/no-autofocus': 'off',
+      "react/prop-types": "off",
+      "jsx-a11y/no-autofocus": "off",
       // BEG: import sorting
-      'import/no-duplicates': 'error',
-      'import/no-unresolved': 'off',
-      'sort/imports': [
-        'error',
+      "import/no-duplicates": "error",
+      "import/no-unresolved": "off",
+      "sort/imports": [
+        "error",
         {
           groups: [
-            { type: 'side-effect', order: 20 },
-            { regex: '^@grafana', order: 30 },
-            { regex: '^react$', order: 10 },
-            { type: 'dependency', order: 15 },
-            { regex: '^.+\\.s?css$', order: 50 },
-            { type: 'other', order: 40 },
+            { type: "side-effect", order: 20 },
+            { regex: "^@grafana", order: 30 },
+            { regex: "^react$", order: 10 },
+            { type: "dependency", order: 15 },
+            { regex: "^.+\\.s?css$", order: 50 },
+            { type: "other", order: 40 },
           ],
-          separator: '\n',
+          separator: "\n",
         },
       ],
-      'sort/type-properties': 'error',
-      'sort/string-enums': 'error',
-      'sort/string-unions': 'error',
-      'sort/exports': 'off',
+      "sort/type-properties": "error",
+      "sort/string-enums": "error",
+      "sort/string-unions": "error",
+      "sort/exports": "off",
       // END: import sorting
     },
   },
 
-  // TypeScript files with deprecation warnings
-  // NOTE: Temporarily disabled - eslint-plugin-deprecation v3 doesn't support ESLint 9
-  // {
-  //   files: ['src/**/*.{ts,tsx}'],
-  //   plugins: {
-  //     deprecation: deprecationPlugin,
-  //   },
-  //   rules: {
-  //     'deprecation/deprecation': 'warn',
-  //   },
-  //   languageOptions: {
-  //     parserOptions: {
-  //       project: './tsconfig.json',
-  //     },
-  //   },
-  // },
-
   // Jest test files
   {
-    files: ['*.test.tsx', '*.test.ts'],
-    ...jestPlugin.configs['flat/recommended'],
+    files: ["*.test.tsx", "*.test.ts"],
+    ...jestPlugin.configs["flat/recommended"],
   },
 ];
