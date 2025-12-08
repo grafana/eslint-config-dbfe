@@ -21,26 +21,16 @@ export default [
   // TanStack Query recommended config
   ...tanstackQueryPlugin.configs['flat/recommended'],
 
-  // Sort plugin recommended config
+  // Main DBFE config with custom rules
   {
     plugins: {
-      sort: sortPlugin,
-    },
-    rules: {
-      ...sortPlugin.configs.recommended.rules,
-    },
-  },
-
-  // Main DBFE config
-  {
-    plugins: {
-      import: importPlugin,
-      'jsx-a11y': jsxA11y,
       sort: sortPlugin,
       jest: jestPlugin,
-      '@tanstack/query': tanstackQueryPlugin,
     },
     rules: {
+      // Sort plugin recommended rules
+      ...sortPlugin.configs.recommended.rules,
+      // Custom rules
       'react/prop-types': 'off',
       'jsx-a11y/no-autofocus': 'off',
       // BEG: import sorting
