@@ -59,20 +59,21 @@ export default [
   },
 
   // TypeScript files with deprecation warnings
-  {
-    files: ['src/**/*.{ts,tsx}'],
-    plugins: {
-      deprecation: deprecationPlugin,
-    },
-    rules: {
-      'deprecation/deprecation': 'warn',
-    },
-    languageOptions: {
-      parserOptions: {
-        project: './tsconfig.json',
-      },
-    },
-  },
+  // NOTE: Temporarily disabled - eslint-plugin-deprecation v3 doesn't support ESLint 9
+  // {
+  //   files: ['src/**/*.{ts,tsx}'],
+  //   plugins: {
+  //     deprecation: deprecationPlugin,
+  //   },
+  //   rules: {
+  //     'deprecation/deprecation': 'warn',
+  //   },
+  //   languageOptions: {
+  //     parserOptions: {
+  //       project: './tsconfig.json',
+  //     },
+  //   },
+  // },
 
   // Jest test files
   {
