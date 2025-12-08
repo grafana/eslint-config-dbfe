@@ -1,6 +1,6 @@
 {
   "name": "@grafana/eslint-config-dbfe",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Database Frontend centralized eSLint config",
   "license": "Apache-2.0",
   "author": "Grafana Labs",
@@ -9,7 +9,8 @@
     "url": "http://github.com/grafana/eslint-config-dbfe.git"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "flat.js"
   ],
   "devDependencies": {
     "@grafana/eslint-config": "^9.0.0",
