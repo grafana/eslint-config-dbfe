@@ -41,12 +41,12 @@ module.exports = {
       "error",
       {
         groups: [
-          { regex: "^react$", order: 10 },
-          { type: "dependency", order: 15 },
           { type: "side-effect", order: 20 },
           { regex: "^@grafana", order: 30 },
-          { type: "other", order: 40 },
+          { regex: "^react$", order: 10 },
+          { type: "dependency", order: 15 },
           { regex: "^.+\\.s?css$", order: 50 },
+          { type: "other", order: 40 },
         ],
         separator: "\n",
       },
