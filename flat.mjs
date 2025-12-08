@@ -1,0 +1,66 @@
+import grafanaConfig from "@grafana/eslint-config/flat.js";
+import importPlugin from "eslint-plugin-import";
+import jsxA11y from "eslint-plugin-jsx-a11y";
+import sortPlugin from "eslint-plugin-sort";
+import jestPlugin from "eslint-plugin-jest";
+import tanstackQueryPlugin from "@tanstack/eslint-plugin-query";
+import deprecationPlugin from "eslint-plugin-deprecation";
+
+export default [
+  // Spread Grafana's base config
+  ...grafanaConfig,
+
+  // Import plugin configs
+  importPlugin.flatConfigs.errors,
+  importPlugin.flatConfigs.warnings,
+  importPlugin.flatConfigs.typescript,
+
+  // JSX a11y strict config
+  jsxA11y.flatConfigs.strict,
+
+  // TanStack Query recommended config
+  ...tanstackQueryPlugin.configs["flat/recommended"],
+
+  // Main DBFE config with custom rules
+  {
+    plugins: {
+      sort: sortPlugin,
+      jest: jestPlugin,
+    },
+    rules: {
+      // Sort plugin recommended rules
+      ...sortPlugin.configs.recommended.rules,
+      // Custom rules
+      "react/prop-types": "off",
+      "jsx-a11y/no-autofocus": "off",
+      // BEG: import sorting
+      "import/no-duplicates": "error",
+      "import/no-unresolved": "off",
+      "sort/imports": [
+        "error",
+        {
+          groups: [
+            { regex: "^react$", order: 10 },
+            { type: "dependency", order: 15 },
+            { type: "side-effect", order: 20 },
+            { regex: "^@grafana", order: 30 },
+            { type: "other", order: 40 },
+            { regex: "^.+\\.s?css$", order: 50 },
+          ],
+          separator: "\n",
+        },
+      ],
+      "sort/type-properties": "error",
+      "sort/string-enums": "error",
+      "sort/string-unions": "error",
+      "sort/exports": "off",
+      // END: import sorting
+    },
+  },
+
+  // Jest test files
+  {
+    files: ["*.test.tsx", "*.test.ts"],
+    ...jestPlugin.configs["flat/recommended"],
+  },
+];
