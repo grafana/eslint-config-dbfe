@@ -10,7 +10,7 @@
   },
   "files": [
     "index.js",
-    "flat.js"
+    "flat.mjs"
   ],
   "devDependencies": {
     "@grafana/eslint-config": "^9.0.0",
