@@ -27,7 +27,7 @@
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-sort": "^4.0.0",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.0"
   },
   "peerDependencies": {
     "@grafana/eslint-config": "^9.0.0",
