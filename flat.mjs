@@ -4,7 +4,6 @@ import jsxA11y from "eslint-plugin-jsx-a11y";
 import sortPlugin from "eslint-plugin-sort";
 import jestPlugin from "eslint-plugin-jest";
 import tanstackQueryPlugin from "@tanstack/eslint-plugin-query";
-import deprecationPlugin from "eslint-plugin-deprecation";
 
 export default [
   // Spread Grafana's base config
