@@ -4,6 +4,9 @@ import jsxA11y from "eslint-plugin-jsx-a11y";
 import sortPlugin from "eslint-plugin-sort";
 import jestPlugin from "eslint-plugin-jest";
 import tanstackQueryPlugin from "@tanstack/eslint-plugin-query";
+// Note: eslint-plugin-deprecation is intentionally excluded from the flat config.
+// It bundles an older @typescript-eslint/utils that references LegacyESLint (removed in ESLint 10).
+// Use @typescript-eslint/no-deprecated (available in @typescript-eslint v7+) directly in your eslint.config.mjs instead.
 
 export default [
   // Spread Grafana's base config
