@@ -13,7 +13,7 @@
     "flat.mjs"
   ],
   "devDependencies": {
-    "@grafana/eslint-config": "^9.0.0",
+    "@grafana/eslint-config": "^10.0.0",
     "@tanstack/eslint-plugin-query": "^5.91.2",
     "@typescript-eslint/eslint-plugin": "^8.48.1",
     "@typescript-eslint/parser": "^8.47.0",
