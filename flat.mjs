@@ -1,9 +1,17 @@
-import grafanaConfig from "@grafana/eslint-config/flat.js";
+import grafanaRootConfig from "@grafana/eslint-config";
 import importPlugin from "eslint-plugin-import";
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import sortPlugin from "eslint-plugin-sort";
 import jestPlugin from "eslint-plugin-jest";
 import tanstackQueryPlugin from "@tanstack/eslint-plugin-query";
+
+// @grafana/eslint-config v10 exports its flat config from the package root.
+// v9 exports a legacy config there and the flat config from flat.js, which
+// v10 no longer has, so flat.js can only be loaded on demand.
+const grafanaConfig = Array.isArray(grafanaRootConfig)
+  ? grafanaRootConfig
+  : (await import("@grafana/eslint-config/flat.js")).default;
+
 // Note: eslint-plugin-deprecation is intentionally excluded from the flat config.
 // It bundles an older @typescript-eslint/utils that references LegacyESLint (removed in ESLint 10).
 // Use @typescript-eslint/no-deprecated (available in @typescript-eslint v7+) directly in your eslint.config.mjs instead.
